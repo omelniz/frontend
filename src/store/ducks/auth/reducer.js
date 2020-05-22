@@ -140,6 +140,7 @@ const authSigninIdle = (state, action) => update(state, {
   authSignin: {
     data: { $set: initialState.authSignin.data },
     status: { $set: 'idle' },
+    error: {$set: {}},
   },
 })
 
